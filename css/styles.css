@@ -2,8 +2,7 @@
 
 /* Fonts */
 /* Importar aquí la font */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
@@ -54,3 +53,112 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+body{
+    font-family: 'lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 6px 10px -10px;
+}
+
+nav{
+    width: 100%;
+}
+
+li.menu-item{
+    display: inline-block;
+    padding: 16px;
+}
+
+/* Para que la img sea circular y no pegue al borde*/
+
+figure img{
+    max-width: 100%;
+    border-radius: 55%;
+    margin: 20px 0;
+}
+
+img:hover, li.menu-item:hover{
+    background-color:#af599e;
+    opacity: 0.6;
+}
+
+/* Acomodar las secciones*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    padding-top: 90px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+p{
+    margin: 20% 0;
+}
+
+/*Asi debe ir el formato del button del CV*/
+.boton{
+    font-size: 20px;
+    background-color: #af599e;
+    border-radius: 30px;
+    color: #fbfbfb;
+    padding: 15px 15px;
+}
+
+/*Seccion de contacto: formato*/
+#contacto article{
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*Seccion de iconos de contacto: formato*/
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li img{
+    width: 100px;
+    width: 90px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/*Footer: formato*/
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #af599e;
+    color: #fbfbfb;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
