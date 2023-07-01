@@ -53,7 +53,7 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
-body{
+body {
     font-family: 'lato', sans-serif;
     font-size: 18px;
     line-height: 1.2;
@@ -62,7 +62,7 @@ body{
     text-align: center;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,31 +75,40 @@ header{
     box-shadow: 0 6px 10px -10px;
 }
 
-nav{
+nav {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
 }
 
-li.menu-item{
+.logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+li.menu-item {
     display: inline-block;
     padding: 16px;
 }
 
 /* Para que la img sea circular y no pegue al borde*/
 
-figure img{
+figure img {
     max-width: 100%;
     border-radius: 55%;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-img:hover, li.menu-item:hover{
-    background-color:#af599e;
+img:hover,
+li.menu-item:hover {
+    background-color: #af599e;
     opacity: 0.6;
 }
 
 /* Acomodar las secciones*/
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,20 +118,20 @@ section{
     padding-top: 90px;
 }
 
-h1{
+h1 {
     font-size: 36px;
 }
 
-h2{
+h2 {
     font-size: 28px;
 }
 
-p{
-    margin: 20% 0;
+p {
+    margin: 20px 0;
 }
 
 /*Asi debe ir el formato del button del CV*/
-.boton{
+.boton {
     font-size: 20px;
     background-color: #af599e;
     border-radius: 30px;
@@ -131,20 +140,20 @@ p{
 }
 
 /*Seccion de contacto: formato*/
-#contacto article{
+#contacto article {
     background-color: rgba(175, 89, 158, 0.3);
     border-radius: 10px;
     padding: 20px;
 }
 
 /*Seccion de iconos de contacto: formato*/
-.iconos{
+.iconos {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-li img{
+li img {
     width: 100px;
     width: 90px;
     padding: 10px;
@@ -152,7 +161,7 @@ li img{
 }
 
 /*Footer: formato*/
-footer{
+footer {
     width: 100%;
     height: 90px;
     background-color: #af599e;
